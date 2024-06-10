@@ -1,5 +1,5 @@
 RegisterCommand("lostitems", function(source, args, rawCommand)
-      local health = GetEntityHealth(PlayerPedId()) -- Get the player's health inside the command function
+      local health = GetEntityHealth(PlayerPedId())
       print(health)
   
       if health == 0 then
