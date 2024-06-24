@@ -2,10 +2,10 @@ local ESX = exports['es_extended']:getSharedObject()
 
 
 RegisterNetEvent('lostitems', function()
-    local source = source -- Get the source inside the event function
+    local source = source
 
     local xPlayer = ESX.GetPlayerFromId(source)
-    local itemNames = xPlayer.getInventory() -- Use the correct ESX inventory function
+    local itemNames = xPlayer.getInventory() 
 
     local currentDate = os.date("%x")
     local currentTime = os.date("%I:%M %p")
